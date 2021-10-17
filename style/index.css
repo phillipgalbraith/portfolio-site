@@ -30,7 +30,7 @@ vertical-align: baseline;
         padding:0;
         margin: 0;
         max-width: 100%;
-       /* border: 1px solid gray;*/
+    
 }
 
 html{
@@ -68,6 +68,7 @@ h3 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../images/moons.jpg');
     background-size: cover;
     background-position: bottom;
+    max-width: 100%;
 }
 
 
@@ -106,7 +107,7 @@ header a:hover {
     height: 35vw;
     display:flex;
     justify-content: left;
-    padding-left: 5vw;
+    padding-left: 2%;
 }
 
 .card {
@@ -114,16 +115,19 @@ header a:hover {
 }
 
 .card img{
-    box-shadow:  4px 4px 4px rgb(14, 13, 12);
+    box-shadow:  0vw 1vw 1vw rgb(24, 21, 19);
     border-radius: 1%;
     opacity: 80%;
     transition: 0.2s;
+    max-width: 100%;
+    height: auto;
 }
+
 
 .card img:hover {
     opacity: 100%;
-
 }
+
 
 .card  h3 {
     color:#FFED5F;
@@ -138,8 +142,10 @@ header a:hover {
 }
 
 #about-container {
+    display: flex;
+    justify-content: left;
     width: 70%;
-    padding-left: 5vw;  
+    padding-left: 5%;  
 }
 
 #about-container h3{
@@ -148,14 +154,13 @@ header a:hover {
 }
 
 #about-container div{
-    padding-left: 10vw;
+    padding-left: 20%;
     width: 100%;
     transition:0.5s;
 }
 
 #about-container div p{
     color: black;
-    width: 100%;
     transition:0.5s;
 }
 
@@ -180,22 +185,23 @@ header a:hover {
 }
 
 .portfolio .card {
-    width: 30%;
+    width: 23%;
 }
 
 .portfolio .card img{
-    height: 25vw;
+    height: 19vw;
 }
 
 footer {
-    margin: 15vw 0;
+    max-width: 100vw;
+    margin: 15vw 0vw;
 }
 
 footer a{
-    padding: 5vw;
+    padding: 5vw 0vw;
 }
 #portfolio h2{
-    margin: 5vw;
+    margin: 5vw 0vw;
 }
 
 @media (max-width: 1032px){
@@ -203,6 +209,7 @@ footer a{
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1)), url('../images/moons.jpg');
         background-position: center;
     }
+
     #about {
         height: 40vw;
     }
@@ -210,59 +217,54 @@ footer a{
         text-align: left;
         line-height: 4;
     }
-    .card{
-        width: 45vw;
+    .portfolio .card {
+        width: 32%;
     }
-
+    
+    .portfolio .card img{
+        height: 25vw;
+    }
+   
 }
 
 @media (max-width: 700px){
-
+    span {
+        display: none;
+    }
+     
     #about {
         margin-top: 5vw;
         height: 50vw;
     }
 
-    #about-container h3{
+    #about-container h3 {
         text-align: left;
         line-height: 3;
+        width: 70%;
+        padding-left: 0vw;  
     }
 
-    #portfolio h2{
-        padding-top: 6vw;
-        width:20vw;
+    #portfolio h2 {
+        padding: 6vw 0vw 0vw 3vw;
+        margin: 10%;
+        width:20%;
         height: 20vw;
         border-radius: 50%;
         box-shadow: -10px -15px 1vw #443e30;
     }
 
-    #about-container {
-        width: 70%;
-        padding-left: 0vw;  
+    .portfolio .card {
+        width: 45%;
     }
-
-    #about-container div{
-        margin-left: 2vw; 
-        padding-left: 2vw;  
-    }
-
-    span {
-        display: none;
+    
+    .portfolio .card img {
+        height: 35vw;
     }
 
     #about-container div:hover p {
         padding-left: 2vw;
         width: 100%;
         color:#FFED5F;
-    }
-
-    .portfolio img{
-        width: 45vw;
-    }
-
-    .portfolio .card{
-        height: 45vw;
-        width: 45vw;
     }
 }
 
@@ -273,40 +275,54 @@ footer a{
         padding: 0px;
     }
     
-   #about {
+    #about {
        margin-bottom: 20vw;
-   }
+    }
    
-   header a:hover{
-    
+    header a:hover {
     font-size: 1.8rem;
-}
-    #about-container *{
-        width: 70%;
-        padding-left: 0vw; 
-        line-height: 1; 
-    }
-    #about-container div{
-        margin-left: 2vw; 
-        padding-left: 1vw;  
-    }
-    span {
-        display: none;
-    }
-    .portfolio{
-        padding: 0vw;
-        margin: 0vw;
-        height:700vw;
     }
 
-    .portfolio .card{
-        height: 70vw;
-        width: 100%;
+
+
+    #about-container h3{
+       display: none; 
     }
-    #portfolio img {
-        height: 100%;
+
+    #about-container {
+        text-align: center;
+        line-height: 4; 
+        padding-left: 0;
         width: 100%;
+        color: white;
     }
+
+    #about-container div{
+        width: 100%;
+        padding-top: 2vw;
+        padding-left: 0; 
+    }
+    
+    #about-container div p{
+        color:#FFED5F;
+        font-size: 1.5rem;
+    }
+    
+    .portfolio {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .portfolio .card {
+        width: 95%;
+    }
+    
+    .portfolio .card img{
+        height: 95%;
+    }
+
 }
 
 
