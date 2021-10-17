@@ -1,0 +1,193 @@
+*/
+/* Eric Meyer's reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+*{
+        box-sizing:border-box;
+        padding:0;
+        margin: 0;
+        max-width: 100%;
+        border: 1px solid gray;
+       
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    background: black;
+}
+
+
+h1, h2, h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color:white;
+    text-align:center;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 44vw;
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    padding: 4vw;
+}
+
+#color-heading {
+    color: rgb(255, 0, 21);
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+}
+
+header a:hover {
+    font-size: 3rem;
+}
+
+#about {
+    height: 35vw;
+    display:flex;
+    justify-content: left;
+    padding-left: 5vw;
+}
+
+.card img{
+    box-shadow:  4px 4px 4px rgb(14, 13, 12);
+    border-radius: 1%;
+}
+
+.card  h3 {
+    color:#FFED5F;
+    letter-spacing: 0.2rem;
+    transition: 0.25s;
+}
+
+.card:hover  h3 {
+    color:white;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+}
+
+#about-container {
+    width: 70%;
+    padding-left: 5vw;  
+}
+
+#about-container h3{
+    text-align: left;
+    line-height: 5;
+}
+
+#about-container div{
+    padding-left: 10vw;
+    width: 100%;
+    transition:0.5s;
+}
+
+#about-container div p{
+    color: black;
+    width: 100%;
+    transition:0.5s;
+}
+
+#adaptive h3{
+    line-height: 5;
+}
+
+#about-container div:hover * {
+    padding-left: 0;
+    width: 100%;
+    color: white;
+}
+
+#about-container div p:hover {
+    color:#FFED5F;
+}
+
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .card {
+    width: 30%;
+}
+
+.portfolio .card img{
+    height: 25vw;
+}
+
+footer {
+    margin: 15vw 0;
+}
+
+footer a{
+    padding: 5vw;
+}
+#portfolio h2{
+    margin: 5vw;
+}
+
+@media (max-width: 1032px){
+
+}
+
+@media (max-width: 700px){
+
+}
+
+@media (max-width: 500px){
+
+}
+
+
+@media (max-width: 300px){
+
+}
+
+
