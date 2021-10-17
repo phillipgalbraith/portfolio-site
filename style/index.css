@@ -109,6 +109,10 @@ header a:hover {
     padding-left: 5vw;
 }
 
+.card {
+    margin-top: 5vw;
+}
+
 .card img{
     box-shadow:  4px 4px 4px rgb(14, 13, 12);
     border-radius: 1%;
@@ -214,7 +218,6 @@ footer a{
 
 @media (max-width: 700px){
 
-
     #about {
         margin-top: 5vw;
         height: 50vw;
@@ -224,6 +227,7 @@ footer a{
         text-align: left;
         line-height: 3;
     }
+
     #portfolio h2{
         padding-top: 6vw;
         width:20vw;
@@ -231,14 +235,17 @@ footer a{
         border-radius: 50%;
         box-shadow: -10px -15px 1vw #443e30;
     }
+
     #about-container {
         width: 70%;
         padding-left: 0vw;  
     }
+
     #about-container div{
         margin-left: 2vw; 
         padding-left: 2vw;  
     }
+
     span {
         display: none;
     }
@@ -250,7 +257,6 @@ footer a{
     }
 
     .portfolio img{
-        height: 38vw;
         width: 45vw;
     }
 
@@ -275,7 +281,6 @@ footer a{
     
     font-size: 1.8rem;
 }
-
     #about-container *{
         width: 70%;
         padding-left: 0vw; 
@@ -295,7 +300,6 @@ footer a{
     }
 
     .portfolio .card{
- 
         height: 70vw;
         width: 100%;
     }
