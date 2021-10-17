@@ -30,12 +30,13 @@ vertical-align: baseline;
         padding:0;
         margin: 0;
         max-width: 100%;
-        border: 1px solid gray;
-       
+       /* border: 1px solid gray;*/
 }
+
 html{
     font-size:62.5%;
 }
+
 body{
     font-size:1.6rem;
     color: white;
@@ -55,14 +56,20 @@ h1, h2, h3{
 h1 {
     font-size: 5rem;
 }
-
+h3 {
+    font-size: 2rem;
+}
 #home {
     display: flex;
     flex-direction: column;
     height: 44vw;
     text-align: center;
     justify-content: space-around;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../images/moons.jpg');
+    background-size: cover;
+    background-position: bottom;
 }
+
 
 nav {
     display: flex;
@@ -74,18 +81,25 @@ nav a {
     padding: 4vw;
 }
 
-#color-heading {
+span {
     color: rgb(255, 0, 21);
 }
 
 a {
     text-decoration: none;
     color:white;
+    font-size: 2rem;
     transition: 0.5s;
 }
 
+a:first-child {
+    font-family:'Roboto Slab', serif;
+    font-size: 2.5rem;
+    color: rgb(255, 0, 21);
+}
+
 header a:hover {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #about {
@@ -98,6 +112,13 @@ header a:hover {
 .card img{
     box-shadow:  4px 4px 4px rgb(14, 13, 12);
     border-radius: 1%;
+    opacity: 80%;
+    transition: 0.2s;
+}
+
+.card img:hover {
+    opacity: 100%;
+
 }
 
 .card  h3 {
@@ -148,12 +169,12 @@ header a:hover {
     color:#FFED5F;
 }
 
-
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .portfolio .card {
     width: 30%;
 }
@@ -174,15 +195,114 @@ footer a{
 }
 
 @media (max-width: 1032px){
+    #home {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1)), url('../images/moons.jpg');
+        background-position: center;
+    }
+    #about {
+        height: 40vw;
+    }
+    #about-container h3{
+        text-align: left;
+        line-height: 4;
+    }
+    .card{
+        width: 45vw;
+    }
 
 }
 
 @media (max-width: 700px){
 
+
+    #about {
+        margin-top: 5vw;
+        height: 50vw;
+    }
+
+    #about-container h3{
+        text-align: left;
+        line-height: 3;
+    }
+    #portfolio h2{
+        padding-top: 6vw;
+        width:20vw;
+        height: 20vw;
+        border-radius: 50%;
+        box-shadow: -10px -15px 1vw #443e30;
+    }
+    #about-container {
+        width: 70%;
+        padding-left: 0vw;  
+    }
+    #about-container div{
+        margin-left: 2vw; 
+        padding-left: 2vw;  
+    }
+    span {
+        display: none;
+    }
+
+    #about-container div:hover p {
+        padding-left: 2vw;
+        width: 100%;
+        color:#FFED5F;
+    }
+
+    .portfolio img{
+        height: 38vw;
+        width: 45vw;
+    }
+
+    .portfolio .card{
+        height: 45vw;
+        width: 45vw;
+    }
 }
 
 @media (max-width: 500px){
 
+    header a{
+        font-size: 1.5rem;
+        padding: 0px;
+    }
+    
+   #about {
+       margin-bottom: 20vw;
+   }
+   
+   header a:hover{
+    
+    font-size: 1.8rem;
+}
+
+    #about-container *{
+        width: 70%;
+        padding-left: 0vw; 
+        line-height: 1; 
+    }
+    #about-container div{
+        margin-left: 2vw; 
+        padding-left: 1vw;  
+    }
+    span {
+        display: none;
+    }
+    .portfolio{
+        padding: 0vw;
+        margin: 0vw;
+        height:700vw;
+    }
+
+    .portfolio .card{
+ 
+        height: 70vw;
+        width: 100%;
+    }
+    #portfolio img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 
