@@ -104,14 +104,14 @@ header a:hover {
 }
 
 #about {
-    height: 35vw;
+    height: 400px;
     display:flex;
     justify-content: left;
     padding-left: 2%;
 }
 
 .card {
-    margin-top: 5vw;
+    margin-top: 2vw;
 }
 
 .card img{
@@ -179,7 +179,7 @@ header a:hover {
 }
 
 #portfolio h2{
-    margin: 15vw 0 5vw 0;
+    margin: 100px 0 5vw 0;
 }
 
 .portfolio {
