@@ -267,7 +267,7 @@ footer a{
     color:rgb(255, 145, 0);
 }
 
-.contact{
+.contactContainer{
     display: flex;
     margin-left: 40%;
     justify-content: space-between;
@@ -277,21 +277,28 @@ footer a{
     border-radius: 50%;
     box-shadow: 0px -15px 1vw #443e30;
 }
-.contact.light{
+
+.contact a:hover {
+    font-size: 6rem;
+}
+
+.contactContainer.light{
     box-shadow: none;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgb(255, 255, 255)), url('../images/daytime-moon.jpg');
     background-size: cover;
     background-position: bottom;
 }
 
-.contact a:hover {
-  font-size: 6rem;
+
+
+
+
+.a11y .fas {
+    text-align: center;
+    font-size: 5rem;
 }
-
-
 .accessibility {
     position:fixed;
-    font-size: 5rem;
     top: 1vw;
     right: 1vw;
 }
@@ -308,13 +315,12 @@ footer a{
     text-align: center;
 }
 
-#a11yModal.light {
-    background-color: #222222; 
-    border: 3px dotted #AAAAAA;
+.a11yModal.light {
+    background-color:rgba(250, 250, 255, 0.9); 
+    border: 3px dotted #222222;
 }
 
 .icon{
-    font-size: 5rem;
     display: flex;
     color: white;
     padding-top: 20px;
@@ -323,7 +329,13 @@ footer a{
 .icon p{
     font-size: 1rem;
 }
+.a11y .fas {
+    margin-left: 20px;
+}
 
+#lightSwitch{
+    margin-left: 12px;
+}
 .icon.light {
     color: black;
 }
@@ -340,7 +352,6 @@ footer a{
 }
 
 .modal {
-    font-size: 5rem;
     background-color: none;
 }
 
@@ -389,6 +400,20 @@ footer a{
         padding-left: 0vw;  
     }
 
+    #about-container div:hover p {
+        padding-left: 2vw;
+        width: 100%;
+        color:#FFED5F;
+    }
+    #about-container div p.light {
+        color:rgb(0, 0, 0);
+    }
+
+    #about-container div:hover p.light {
+        color:rgb(255, 145, 0);
+    }
+
+
     #portfolio h2 {
         padding: 6vw 0vw 0vw 3vw;
         margin: 60px 0 0 10%;
@@ -411,13 +436,8 @@ footer a{
     .portfolio .card img {
         height: 35vw;
     }
-
-    #about-container div:hover p {
-        padding-left: 2vw;
-        width: 100%;
-        color:#FFED5F;
-    }
 }
+  
 
 @media (max-width: 500px){
     header{
@@ -477,6 +497,22 @@ footer a{
         height: 95%;
     }
 
+
+    .contactContainer{
+        display: flex;
+        margin-left: 40%;
+        justify-content: space-between;
+        width: 20%;
+        height: 20vw;
+        margin-top: 10%;
+        border-radius: 50%;
+        box-shadow: 0px -15px 1vw #443e30;
+    }
+    
+    .contact a:hover {
+        font-size: 6rem;
+    }
+    
 }
 
 

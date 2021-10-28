@@ -15,9 +15,10 @@ lightSwitch.addEventListener('click', lighten);
 
 function toggleHide(e) {
    const classes = Array.from(e.target.classList);
+   console.log(classes);
    if(Array.from(e.target.classList).includes('contact')){
       contactButton.classList.toggle('hidden');
-      contactModal.classList.toggle('hidden');
+      contactModal.classList.toggle('hidden');    
    } else if (Array.from(e.target.classList).includes('a11y')) {
       a11yModal.classList.toggle('hidden');
       a11yButton.classList.toggle('hidden');
