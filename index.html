@@ -1,8 +1,8 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/52a72f2e88.js" crossorigin="anonymous"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&family=Sora&display=swap" rel="stylesheet">
@@ -11,9 +11,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phil Galbraith: Web Dev</title>
+    <script src="./script/index.js" defer ></script>
 </head>
 
 <body>
+  
     <header>
         <section id="home">
             <h1>Phil Galbraith <span id = "color-heading"><i>Web Dev</i></span></h1>
@@ -97,15 +99,38 @@
                    <h3 class="label">Landing</h3>
                </a>
            </div>
+
+           <div class="card" id="educational">
+            <a href="/educational/">
+                <img src="educational/educational.jpg" alt="Landing Page">
+                <h3 class="label">Education</h3>
+            </a>
+        </div>
         </div>
     </section>
     <footer>
         <section id="contact">
             <h2>Like What You See?</h2>
-            <a href=""><h3>Contact Me</h3></a>
-            <a><i class="fab fa-linkedin-in"></i></a>
+            <h3 id="contactButton" class="contact">Contact Me</h3>
+            <div class="contact contactContainer modal hidden" id="contactModal">
+                <a href="https://www.linkedin.com/in/phillip-galbraith-web/"><i class="contact fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/FillGalbraith/status/1450556265491435523?s=20"><i class="contact fab fa-twitter"></i></a>
+                <a href="mailto:fillupgalbraith@gmail.com"><i class="contact fas fa-envelope-square"></i></a>
+            </div>
         </section>
     </footer>
+
+    <div class="accessibility a11y" id="a11yButton"><i class="a11y fas fa-universal-access"></i></div>
+    <div class="accessibility modal a11yModal a11y hidden">
+        <span class="icon a11y"><i class="fas fa-puzzle-piece a11y "></i><!-- autism --></span>
+        <p>static</p>
+        <span class="icon a11y"><i class="fas fa-hand-sparkles a11y"></i><!-- adhd --></span>
+        <p>no-motion</p>
+        <span class="icon a11y"><i class="fas fa-glasses a11y"></i><!-- glasses optimized --></span>
+        <p>font</p>
+        <span class="icon a11y" id="lightSwitch"><i class="fas fa-lightbulb a11y"></i></span>
+        <p>light/dark</p>
+    </div>
 </body>
 </html>
 
