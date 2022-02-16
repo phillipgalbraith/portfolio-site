@@ -8,7 +8,7 @@
 <p><a href='https://topstock.github.io/portfolio-site/'>https://topstock.github.io/portfolio-site/</a></p>
 
 <h3>Built with</h3>
-<p>HTML, linked external stylesheet</p>
+<p>Semantic HTML, linked external stylesheet</p>
 <p>CSS</p>
 <ul>
  <li>Media Queries</li>
