@@ -1,25 +1,25 @@
-#Portfolio
+<h2>Portfolio</h2>
 <p>A responsive website with CSS and HTML, including a modal</p>
 
-##Motivation
+<h3>Motivation</h3>
 <p>I wanted to demonstrate my ability to build a responsive page using HTML and CSS alone.</p>
 
-##View at:
-<a href='https://topstock.github.io/portfolio-site/'>https://topstock.github.io/portfolio-site/</a>
+<h3>View at:</h3>
+<p><a href='https://topstock.github.io/portfolio-site/'>https://topstock.github.io/portfolio-site/</a></p>
 
-##Built with
+<h3>Built with</h3>
 <p>HTML, linked external stylesheet</p>
-<h3>CSS</h3>
+<p>CSS</p>
 <ul>
  <li>Media Queries</li>
  <li>Flex-box</li>
  <li>Trasitions</li>
 </ul>
 
-##Features
+<h3>Features</h3>
 <p>Modal and light/dark mode<p>
 
-##How to use?
+<h3>How to use</h3>
 <p>Hover over text and images to see CSS transforms.
 Click contact to reveal contact options. 
 Resize the window and view on multiple screen sizes to test responsivity.</p>
