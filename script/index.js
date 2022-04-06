@@ -11,8 +11,6 @@ a11yButton.addEventListener('click', toggleHide);
 a11yModal.addEventListener('click', toggleHide);
 lightSwitch.addEventListener('click', lighten);
 
-
-
 function toggleHide(e) {
    const classes = Array.from(e.target.classList);
    console.log(classes);
@@ -24,7 +22,6 @@ function toggleHide(e) {
       a11yButton.classList.toggle('hidden');
    }
 } 
-
 
 function lighten(e){
    e.stopPropagation();
