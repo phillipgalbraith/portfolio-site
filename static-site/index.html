@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/52a72f2e88.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&family=Sora&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phil Galbraith: Web Dev</title>
+    <script src="../script/index.js" defer ></script>
+</head>
+
+<body>
+  
+    <header>
+        <section id="home">
+            <h1>Phil Galbraith <span id="color-heading"><em>Web Developer</em></span></h1>
+            <nav>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#about">About</a></span>
+                <span><a href="#portfolio">Portfolio</a></span>
+                <span><a href="#contact">Contact</a></span>
+            </nav>
+        </section>
+    </header>
+    <section id="about">
+        <div class="static card">
+            <img src="../profile.png" alt="portrait">
+            <h3>Phil</h3>
+        </div>
+        <div id="about-container">
+            <div id="responsive">
+                <h3>Fluid</h3>
+                <p>Flexible sites</p>
+                <div id="fluid">
+                        <h3>Adaptive</h3>
+                        <p>Fit all screens</p>
+                    <div id="adaptive">
+                        <h3>Responsive</h3>
+                        <p>Mobile? Yes!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2> <b>portfolio</b></h2>
+        <div class="static portfolio"> 
+           <div class="static card" id="social">
+               <a href="../social-page/index.html">
+                   <img src="../social-page/social.jpg" alt="social media page">
+                   <h3 class="static label">Social Media</h3>
+               </a>
+           </div>
+
+           <div class="static card" id="news">
+               <a href="../news-page/index.html">
+                   <img src="../news-page/news.jpg" alt="portrait">
+                   <h3 class="static label">News</h3>
+               </a>
+           </div>
+
+           <div class="static card" id="ecommerce">
+               <a href="../ecommerce/index.html">
+                   <img src="../ecommerce/ecommerce.jpg" alt="e-commerce page">
+                   <h3 class="static label">Shopping</h3>
+               </a>
+           </div>
+
+           <div class="static card" id="membership">
+               <a href="../gym-membership/index.html">
+                   <img src="../gym-membership/gym-membership.jpg" alt="gym membership page">
+                   <h3 class="static label">Membership</h3>
+               </a> 
+           </div>
+
+           <div class="static card" id="medical">
+               <a href="../medical-clinic/index.html">
+                   <img src="../medical-clinic/medical.jpg" alt="medical clinic page">
+                   <h3 class="static label">Medical</h3>
+               </a>
+           </div>
+
+           <div class="static card" id="video"> 
+               <a href="../video-streaming/index.html">
+                   <img src="../video-streaming/video-stream.jpg" alt="video streaming page">
+                   <h3 class="static label">Streaming</h3>
+               </a>
+           </div>
+
+           <div class="static card" id="welcome">
+               <a href="../welcome-landing/index.html">
+                   <img src="../welcome-landing/welcome.jpg" alt="Landing Page">
+                   <h3 class="static label">Landing</h3>
+               </a>
+           </div>
+
+           <div class="static card" id="educational">
+            <a href="../educational/">
+                <img src="../educational/educational.jpg" alt="Landing Page">
+                <h3 class="static label">Education</h3>
+            </a>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <section id="contact">
+            <h2>Like What You See?</h2>
+            <h3 id="contactButton" class="static contact">Contact Me</h3>
+            <div class="static contact-icon-container contactContainer modal hidden" id="contactModal">
+                <a href="https://www.linkedin.com/in/phillip-galbraith-web/"><i class="static contact-icon fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/FillGalbraith/status/1450556265491435523?s=20"><i class="static contact-icon fab fa-twitter"></i></a>
+                <a href="mailto:fillupgalbraith@gmail.com"><i class="static contact-icon fas fa-envelope-square"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <div class="static accessibility a11y" id="a11yButton"><i class="static a11y fas fa-universal-access"></i></div>
+    <div class="static  accessibility modal a11yModal a11y hidden">
+        <a href="../index.html"><span class="static icon a11y"><i class="static fas fa-puzzle-piece a11y "></i><!-- autism --></span></a>
+        <p>static</p>
+        <span class="static icon a11y"><i class="static fas fa-hand-sparkles a11y"></i><!-- adhd --></span>
+        <p>no-motion</p>
+        <span class="static icon a11y"><i class="static fas fa-glasses a11y"></i><!-- glasses optimized --></span>
+        <p>font</p>
+        <span class="static icon a11y" id="lightSwitch"><i class="static fas fa-lightbulb a11y"></i></span>
+        <p>light/dark</p>
+    </div>
+</body>
+</html>
+
