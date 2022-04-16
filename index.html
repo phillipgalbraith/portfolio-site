@@ -6,42 +6,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&family=Sora&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="../style/index.css">
+
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/hover.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Phil Galbraith: Web Dev</title>
+    <title>Phillip Galbraith: Web Dev</title>
     <script src="./script/index.js" defer ></script>
 </head>
 
 <body>
   
     <header>
-        <section id="home">
-            <h1>Phil Galbraith <span id="color-heading"><em>Web Developer</em></span></h1>
+        <section id="splash">
+            <h1>Phillip Galbraith</h1>
             <nav>
-                <span><a href="#home">Home</a></span>
-                <span><a href="#about">About</a></span>
-                <span><a href="#portfolio">Portfolio</a></span>
-                <span><a href="#contact">Contact</a></span>
+                 <a class="hovers" href="#home">Home</a>
+                 <a class="hovers" href="#about">About</a>
+                 <a class="hovers" href="#portfolio">Portfolio</a>
+                 <a class="hovers" href="#contact">Contact</a>
             </nav>
         </section>
     </header>
     <section id="about">
-        <div class="card">
-            <img src="profile.png" alt="portrait">
-            <h3>Phil</h3>
+        <div class="card hovers">
+            <img id="profile" class="hovers profile" src="profile.png" alt="portrait of Phillip Galbraith">
+            <div id="aboutLinks">
+                <a href="https://www.linkedin.com/in/phillip-galbraith-web/">
+                    <i class="contact-icon fab fa-linkedin-in"></i>
+                   <span>LinkedIn</span>
+                </a> <br>
+                <a href="mailto:fillupgalbraith@gmail.com">
+                    <i class="contact-icon fas fa-envelope-square"></i>
+                    <span>email</span>
+                </a>
+            </div>
         </div>
-        <div id="about-container">
-            <div id="responsive">
+        <div class="hovers" id="aboutContainer">
+            <div class="hovers" id="responsive">
                 <h3>Fluid</h3>
-                <p>Flexible sites</p>
-                <div id="fluid">
-                        <h3>Adaptive</h3>
-                        <p>Fit all screens</p>
-                    <div id="adaptive">
+                <p class="hovers indent">Flexible sites</p>
+                <div class="hovers" id="fluid">
+                    <h3>Adaptive</h3>
+                    <p class ="hovers indent">Fit all screens</p>
+                    <div class="hovers" id="adaptive">
                         <h3>Responsive</h3>
-                        <p>Mobile? Yes!</p>
+                        <p class="hovers indent">Mobile? Yes!</p>
                     </div>
                 </div>
             </div>
@@ -49,87 +60,103 @@
     </section>
     
     <section id="portfolio">
-        <h2> <b>portfolio</b></h2>
+        <h2><b>portfolio</b></h2>
         <div class="portfolio"> 
-           <div class="card" id="social">
-               <a href="/social-page/index.html">
-                   <img src="social-page/social.jpg" alt="social media page">
-                   <h3 class="label">Social Media</h3>
+           <div class="card hovers" id="social">
+               <a href="#">
+                   <img class="hovers" src="social-page/social.jpg" alt="social media page">
+                   <h3 class="label hovers">Social Media</h3>
                </a>
            </div>
 
-           <div class="card" id="news">
-               <a href="/news-page/index.html">
-                   <img src="news-page/news.jpg" alt="portrait">
-                   <h3 class="label">News</h3>
+           <div class="card hovers" id="news">
+               <a href="#">
+                   <img class="hovers" src="news-page/news.jpg" alt="portrait">
+                   <h3 class="label hovers">News</h3>
                </a>
            </div>
 
-           <div class="card" id="ecommerce">
-               <a href="/ecommerce/index.html">
-                   <img src="ecommerce/ecommerce.jpg" alt="e-commerce page">
-                   <h3 class="label">Shopping</h3>
+           <div class="card hovers" id="ecommerce">
+               <a href="#">
+                   <img class="hovers" src="ecommerce/ecommerce.jpg" alt="e-commerce page">
+                   <h3 class="label hovers">Shopping</h3>
                </a>
            </div>
 
-           <div class="card" id="membership">
-               <a href="/gym-membership/index.html">
-                   <img src="gym-membership/gym-membership.jpg" alt="gym membership page">
-                   <h3 class="label">Membership</h3>
+           <div class="card hovers" id="membership">
+               <a href="#">
+                   <img class="hovers" src="gym-membership/gym-membership.jpg" alt="gym membership page">
+                   <h3 class="label hovers">Membership</h3>
                </a> 
            </div>
 
-           <div class="card" id="medical">
-               <a href="/medical-clinic/index.html">
-                   <img src="medical-clinic/medical.jpg" alt="medical clinic page">
-                   <h3 class="label">Medical</h3>
+           <div class="card hovers" id="medical">
+               <a href="#">
+                   <img class="hovers" src="medical-clinic/medical.jpg" alt="medical clinic page">
+                   <h3 class="label hovers">Medical</h3>
                </a>
            </div>
 
-           <div class="card" id="video"> 
-               <a href="/video-streaming/index.html">
-                   <img src="video-streaming/video-stream.jpg" alt="video streaming page">
-                   <h3 class="label">Streaming</h3>
+           <div class="card hovers" id="video"> 
+               <a href="#">
+                   <img class="hovers" src="video-streaming/video-stream.jpg" alt="video streaming page">
+                   <h3 class="label hovers">Streaming</h3>
                </a>
            </div>
 
-           <div class="card" id="welcome">
-               <a href="/welcome-landing/index.html">
-                   <img src="welcome-landing/welcome.jpg" alt="Landing Page">
-                   <h3 class="label">Landing</h3>
+           <div class="card hovers" id="welcome">
+               <a href="#">
+                   <img class="hovers" src="welcome-landing/welcome.jpg" alt="Landing Page">
+                   <h3 class="label hovers">Landing</h3>
                </a>
            </div>
 
-           <div class="card" id="educational">
-            <a href="/educational/">
-                <img src="educational/educational.jpg" alt="Landing Page">
-                <h3 class="label">Education</h3>
+           <div class="card hovers" id="educational">
+            <a href="#">
+                <img class="hovers" src="educational/educational.jpg" alt="Landing Page">
+                <h3 class="label hovers">Education</h3>
             </a>
         </div>
         </div>
     </section>
     <footer>
-        <section id="contact">
-            <h2>Like What You See?</h2>
-            <h3 id="contactButton" class="contact">Contact Me</h3>
-            <div class="contact-icon-container contactContainer modal hidden" id="contactModal">
-                <a href="https://www.linkedin.com/in/phillip-galbraith-web/"><i class="contact-icon fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/FillGalbraith/status/1450556265491435523?s=20"><i class="contact-icon fab fa-twitter"></i></a>
-                <a href="mailto:fillupgalbraith@gmail.com"><i class="contact-icon fas fa-envelope-square"></i></a>
+        <h2>Like What You See?</h2>
+        <h3 id="contact">Contact Me</h3>
+        <div id="ring">
+            <div class="contact " id="contactModal">
+                <a class="half hovers" href="https://www.linkedin.com/in/phillip-galbraith-web/">
+                    <i class="contact-icon fab fa-linkedin-in"></i>
+                   <span>LinkedIn</span>
+                </a>
+                <a class="half hovers" href="mailto:fillupgalbraith@gmail.com">
+                    <i class="contact-icon fas fa-envelope-square"></i>
+                    <span>email</span>
+                </a>
             </div>
-        </section>
+        </div>
     </footer>
 
-    <div class="accessibility a11y" id="a11yButton"><i class="a11y fas fa-universal-access"></i></div>
-    <div class=" accessibility modal a11yModal a11y hidden">
-        <a href="https://phillipgalbraith.github.io/portfolio-site/static-site/index.html"><span class="icon a11y" id="staticSwitch"><i class="fas fa-puzzle-piece a11y "></i><!-- autism --></span></a>
-        <p>static</p>
-        <span class="icon a11y"><i class="fas fa-hand-sparkles a11y"></i><!-- adhd --></span>
-        <p>no-motion</p>
-        <span class="icon a11y"><i class="fas fa-glasses a11y"></i><!-- glasses optimized --></span>
-        <p>font</p>
-        <span class="icon a11y" id="lightSwitch"><i class="fas fa-lightbulb a11y"></i></span>
-        <p>light/dark</p>
+    <i class="fas fa-universal-access a11yButton icon accessibility"></i>
+    <div class="a11yModal hidden accessibility">
+        <div class="column icon close" id="closeSwitch">
+            <h4>Close &nbsp &nbsp &nbsp X</h4>
+        </div>
+        <div class="column icon a11y" id="hoverSwitch">
+            <i class=" fas fa-puzzle-piece "></i>
+            <h4>motion</h4>
+        </div>
+        <div class="column icon a11y" id="fontSwitch">
+            <i class="fas fa-glasses a11y"></i>
+            <h4>font</h4>
+        <div>
+        <div class="column icon a11y" id="lightSwitch">
+            <i class="fas fa-lightbulb a11y"></i>
+            <h4>light/dark</h4>
+        </div> 
+        <div class="column icon a11y" id="contrastSwitch">
+            <i class="fas fa-adjust a11y"></i>
+            <h4>contrast</h4>
+        </div> 
     </div>
 </body>
 </html>
