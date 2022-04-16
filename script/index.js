@@ -1,34 +1,65 @@
-//document.querySelector('body').style.backgroundColor = 'red';
-
-const a11yButton = document.querySelector('#a11yButton');
+const a11yButton = document.querySelector('.a11yButton');
 const a11yModal = document.querySelector('.a11yModal');
-const contactButton = document.querySelector('#contactButton');
-const contactModal = document.querySelector('#contactModal');
+const fontButton = document.querySelector('.a11yFont');
+const body = document.getElementsByTagName("body")[0];
+const h1s = document.getElementsByTagName("h1");
+const h2s = document.getElementsByTagName("h2");
+const h3s = document.getElementsByTagName("h3");
+const ring = document.querySelector("#ring");
+const splash = document.querySelector("#splash");
+
+console.log({body});
+const closeSwitch = document.querySelector('#closeSwitch');
+const hovers = Array.from(document.querySelectorAll('.hovers'));
+const hoverSwitch = document.querySelector('#hoverSwitch');
+const fontSwitch = document.querySelector('#fontSwitch');
 const lightSwitch = document.querySelector('#lightSwitch');
-contactButton.addEventListener('click', toggleHide);
-contactModal.addEventListener('click', toggleHide);
+const contrastSwitch = document.querySelector('#contrastSwitch');
+
+console.log('it aint crashed yet!')
 a11yButton.addEventListener('click', toggleHide);
 a11yModal.addEventListener('click', toggleHide);
-lightSwitch.addEventListener('click', lighten);
+lightSwitch.addEventListener('click', toggleLight);
+hoverSwitch.addEventListener('click', toggleHide);
+hoverSwitch.addEventListener('click', toggleHovers);
+fontSwitch.addEventListener('click', toggleFont);
+lightSwitch.addEventListener('click', toggleLight);
+contrastSwitch.addEventListener('click', toggleContrast);
 
 function toggleHide(e) {
-   const classes = Array.from(e.target.classList);
-   console.log(classes);
-   if(Array.from(e.target.classList).includes('contact')){
-      contactButton.classList.toggle('hidden');
-      contactModal.classList.toggle('hidden');    
-   } else if (Array.from(e.target.classList).includes('a11y')) {
-      a11yModal.classList.toggle('hidden');
-      a11yButton.classList.toggle('hidden');
-   }
+   a11yModal.classList.toggle('hidden');
+   console.log(a11yModal.classList);
+   a11yButton.classList.toggle('hidden');
+   return 
 } 
 
-function lighten(e){
+function toggleFont(e) {
+   e.stopPropagation();
+   const classes = Array.from(body.classList);
+   console.log({classes})
+   body.classList.toggle('a11yFont');
+   const headings = [h1s,h2s,h3s].flatMap(h => { return Array.from(h)});
+   headings.forEach(elem => elem.classList.toggle('a11yFont'));
+   return
+}
+
+function toggleLight(e){
    e.stopPropagation();
    const everything = Array.from(document.querySelectorAll('*'));
    everything.forEach(elem => elem.classList.toggle('light'));
+   return
 }
 
+function toggleHovers(e){
+   e.stopPropagation();
+   hovers.forEach(elem => elem.classList.toggle('hovers'));
+   return
+}
 
-
-
+function toggleContrast(e) {
+   const heading2s = Array.from(h2s);
+   heading2s.forEach( h => h.classList.toggle('hiContrast'));
+   splash.classList.toggle('hiContrast');
+   ring.classList.toggle('hiContrast');
+   return 
+} 

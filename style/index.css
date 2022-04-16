@@ -12,25 +12,24 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-:focus {
+:focus{
     outline: 0;
 }
 
 *{
-        box-sizing:border-box;
-        padding:0;
-        margin: 0;
-        max-width: 100%;
-    
+    box-sizing:border-box;
+    padding:0;
+    margin: 0;
+    max-width: 100%; 
 }
 
 html{
@@ -42,6 +41,10 @@ body{
     color: white;
     font-family: 'Sora', sans-serif;
     background: black;
+}
+
+.a11yFont{
+    font-family: 'Arial', sans-serif;
 }
 
 body.light{
@@ -61,78 +64,126 @@ h1.light, h2.light, h3.light{
     color:black;
 }
 
-h1 {
+h1{
     font-size: 5rem;
 }
-h3 {
+
+h2{
+    margin: 3vw 0;
+}
+
+h3{
     font-size: 2rem;
 }
-#home {
+
+h4{
+    font-size: 1.4rem;
+}
+
+#splash{
     display: flex;
     flex-direction: column;
-    height: 44vw;
+    justify-content: space-between;
+    height: 34vw;
     text-align: center;
-    justify-content: space-around;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../images/moons.jpg');
     background-size: cover;
-    background-position: bottom;
-    max-width: 100%;
-}
-
-#home.light {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgb(255, 255, 255)), url('../images/daytime-moon.jpg');
-}
-
-nav {
-    height: 10rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav a {
+    background-position: center;
+    margin: 0 0 4vw 0;
     padding: 4vw;
 }
 
-nav span {
-    width: 20vw
+#splash.light{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgb(255, 255, 255)), url('../images/daytime-moon.jpg');
 }
 
-
-span.light {
-    color: rgb(255, 145, 0);
+section{
+    margin: 0 5vw 5vw 5vw;
 }
 
-a {
+nav{
+    padding:none;
+    margin:none;
+    width: 90vw;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    padding:none;
+    margin:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19vw;
+}
+
+a{
     text-decoration: none;
     color:white;
     font-size: 3rem;
     transition: 0.5s;
 }
 
-a:active {
-    color: orange;
-}
-
-a.light {
+a.light{
     color:black;
 }
 
-
-header a:hover {
-    font-size: 4rem;
+a:active{
+    color: orange;
 }
 
-#about {
+#about{
+    margin-top: 20px;
     height: 400px;
     display:flex;
     justify-content: left;
-    padding-left: 2%;
+    padding: 2vw;
 }
 
-.card {
+.accessibility{
+    position:fixed;
+    top: 1vw;
+    right: 1vw;
+}
+
+#aboutContainer{
+    display: flex;
+    justify-content: left;
+    width: 70%;
+    padding-left: 5%;  
+}
+
+#aboutContainer h3{
+    text-align: left;
+    line-height: 5;
+}
+
+#aboutContainer div{
+    padding-left: 20%;
+    width: 100%;
+    transition:0.5s;
+}
+
+#aboutContainer div p{
+    color: black;
+    transition:0.5s;
+}
+
+#aboutContainer div p.light{
+    color: white;
+}
+
+#adaptive h3{
+    line-height: 5;
+}
+
+.card{
     margin-top: 2vw;
-    height: 23vw;
+    height: 24vw;
+    width: 22vw;
 }
 
 .card img{
@@ -141,8 +192,8 @@ header a:hover {
     margin-bottom: 10px;
     opacity: 80%;
     transition: 0.2s;
-    max-width: 100%;
-    height: auto;
+    width: 22vw;
+    height: 22vw;
 }
 
 .card.light img{
@@ -150,95 +201,53 @@ header a:hover {
     opacity: 100%;
 }
 
-.card img:hover {
-    opacity: 100%;
-}
-
-.card.light img:hover {
-    box-shadow: 0 10px 3px rgb(132, 158, 177);
-}
-
-
-.card h3 {
+.card h3{
     color:#FFED5F;
     letter-spacing: 0.2rem;
     transition: 0.25s;
 }
 
-.card.light h3 {
+.card.light h3{
     color: rgb(255, 145, 0);
 }
 
-.card:hover  h3 {
-    color:white;
-    letter-spacing: 0.1rem;
-    font-size: 3rem;
-}
-
-.card.light:hover  h3 {
-    color:rgb(0, 0, 0);
-}
-
-#about-container {
+#contactModal{
     display: flex;
-    justify-content: left;
-    width: 70%;
-    padding-left: 5%;  
+    width: 21vw;
+    height: 21vw;
+    justify-content: space-between;
+    margin-top: 10%;
 }
 
-#about-container h3{
-    text-align: left;
-    line-height: 5;
+#contactPortrait{
+    font-size: 1.5rem;
 }
 
-#about-container div{
-    padding-left: 20%;
-    width: 100%;
-    transition:0.5s;
+#contactPortrait span{
+    font-size: 1.5rem;
 }
 
-#about-container div p{
-    color: black;
-    transition:0.5s;
-}
-#about-container div p.light{
-    color: white;
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#adaptive h3{
-    line-height: 5;
+footer div a{
+    padding: 2vw 0 0 0;
 }
 
-#about-container div:hover * {
-    padding-left: 0;
-    width: 100%;
-    color: white;
-}
+footer h3{
+    margin-bottom: 2vw;
+} 
 
-
-#about-container div:hover *.light {
-    color: black;
-}
-
-#about-container div p:hover {
-    color:#FFED5F;
-}
-
-#about-container div p.light:hover {
-    color:rgb(255, 145, 0);
-}
-
-#portfolio h2{
-    margin: 100px 0 5vw 0;
-}
-
-.portfolio {
+.portfolio{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.portfolio .card {
+.portfolio .card{
     width: 23%;
 }
 
@@ -246,78 +255,69 @@ header a:hover {
     height: 19vw;
 }
 
-footer {
-    max-width: 100vw;
-    margin: 15vw 0vw;
+#profile{
+    height: 17vw;
+    width: 17vw;
+    border-radius: 50%;
 }
 
-footer a{
-    padding: 5vw 0vw;
-}
 
-#contact h3{
-    margin-top: 3%;
-    transition: 300ms;
-}
-
-#contact h3:hover{
-    font-size: 3rem;
-    color: #FFED5F;
-}
-
-#contact h3.light:hover{
-    color:rgb(255, 145, 0);
-}
-
-.contactContainer{
-    display: flex;
-    margin-left: 40%;
-    justify-content: space-between;
-    width: 20%;
-    height: 20vw;
-    margin-top: 10%;
+#ring {
     border-radius: 50%;
     box-shadow: 0px -15px 1vw #443e30;
+    padding:none;
+    width: 20vw;
+    height: 20vw;
 }
 
-.contact a:hover {
-    font-size: 6rem;
+.half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 7vw;
+    height: 7vw;
 }
 
-.contactContainer.light{
+.half span{
+    font-size: 2rem;
+}
+
+#ring.light{
     box-shadow: none;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgb(255, 255, 255)), url('../images/daytime-moon.jpg');
     background-size: cover;
     background-position: bottom;
 }
 
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
 
 
 
+.hidden{
+    display: none !important;
+}
 
-.a11y .fas {
+.icon{
     text-align: center;
     font-size: 5rem;
 }
-.accessibility {
-    position:fixed;
-    top: 1vw;
-    right: 1vw;
-}
 
-.hidden {
-    display: none;
-}
 
-.a11yModal {
+.a11yModal{
     background-color: rgba(0,0,0,0.9);
     border: 3px dotted #AAAAAA;
-    width: 10rem;
+    width: 11rem;
     height: 40rem;
     text-align: center;
 }
 
-.a11yModal.light {
+.a11yModal.light{
     background-color:rgba(250, 250, 255, 0.9); 
     border: 3px dotted #222222;
 }
@@ -325,151 +325,148 @@ footer a{
 .icon{
     display: flex;
     color: white;
-    padding-top: 20px;
 }
 
-.icon p{
+.icon span{
     font-size: 1rem;
 }
-.a11y .fas {
-    margin-left: 20px;
-}
 
-#lightSwitch{
-    margin-left: 12px;
-}
-.icon.light {
+.icon.light{
     color: black;
-}
-
-.noColor {
-    background-color: white;
-    color: black;
-    box-shadow: none;
-}
-
-.easyRead {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-}
-
-.modal {
-    background-color: none;
 }
 
 @media (max-width: 1032px){
-    #home {
+    #splash{
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1)), url('../images/moons.jpg');
         background-position: center;
     }
 
-    #about {
+    #about{
         height: 40vw;
     }
-    #about-container h3{
+
+    #aboutContainer h3{
         text-align: left;
         line-height: 4;
+    }
+
+    #aboutLinks span, .half span{
+        font-size: 1.7rem;
     }
 
     #portfolio h2{
         margin: 60px 0 0 0;
     }
     
-    .portfolio .card {
-        width: 32%;
+    .portfolio .card{
+        width: 25vw;
+        height: 35vw;
     }
     
     .portfolio .card img{
         height: 25vw;
     }
-   
+
+    .half {
+        display: flex;
+        justify-content: center;
+        width: 7vw;
+    }
+    
+    footer h3{
+        margin-bottom: 3vw;
+    } 
 }
 
 @media (max-width: 700px){
-    span {
-        display: none;
-    }
-     
-    #about {
+
+    #about{
         margin-top: 5vw;
         height: 50vw;
     }
 
-    #about-container h3 {
+    #about-container h3{
         text-align: left;
         line-height: 3;
         width: 70%;
         padding-left: 0vw;  
     }
 
-    #about-container div:hover p {
-        padding-left: 2vw;
-        width: 100%;
-        color:#FFED5F;
-    }
-    #about-container div p.light {
+    #about-container div p.light{
         color:rgb(0, 0, 0);
     }
 
-    #about-container div:hover p.light {
-        color:rgb(255, 145, 0);
+    #aboutLinks span, .half span{
+        font-size: 1.5rem;
     }
 
 
-    #portfolio h2 {
+    #portfolio h2{
         padding: 6vw 0vw 0vw 3vw;
         margin: 60px 0 0 10%;
-        width:20%;
+        width: 20vw;
         height: 20vw;
         border-radius: 50%;
         box-shadow: -10px -15px 1vw #443e30;
     }
-    #portfolio h2.light {
+
+    #portfolio h2.light{
         box-shadow: none;
         background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgb(255, 255, 255)), url('../images/daytime-moon.jpg');
         background-size: cover;
         background-position: bottom;
     }
 
-    .portfolio .card {
-        width: 45%;
+    .portfolio .card{
+        width: 27 vw;
+        height: 33 vw;
     }
-    
-    .portfolio .card img {
-        height: 35vw;
+
+    .profile .card span{
+        font-size: 1rem;
+    }
+    .portfolio .card img{
+        width: 27vw;
+        height: 27vw;
+    }
+
+    #contactModal {
+        display: flex;
+        flex-flow: row ;
+        align-items: flex-start;
+        width: 60vw;
+        padding: 0 20vw;
+    }
+
+    #ring {
+        display: flex;
+        flex-flow: row ;
+        justify-content: center;
+        align-items: center;
+        align-items: flex-start;
+        height: 60vw;
+        width: 60vw;
     }
 }
   
-
 @media (max-width: 500px){
-    header{
-        padding-top: 10px
-    }
-    header a{
+    a{
         font-size: 1.5rem;
         padding: 0px;
     }
   
-    header a:hover {
-    font-size: 1.8rem;
-    }
-   
-    #about {
+    #about{
         margin-bottom: 50px;
-     }
-    
-    #about-container h3{
-       display: none; 
     }
-
-    #about-container {
+    
+    #about-container{
         text-align: center;
         line-height: 4; 
         padding-left: 0;
         width: 100%;
         color: white;
     }
-
+    
     #about-container div{
         width: 100%;
         padding-top: 2vw;
@@ -481,48 +478,47 @@ footer a{
         font-size: 1.5rem;
     }
     
+    #about-container h3{
+        display: none; 
+    } 
 
+    h3{
+        font-size:smaller;
+    }
 
-    .portfolio {
+    header{
+        padding-top: 10px
+    }
+
+    .portfolio{
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
     }
     
-    .portfolio .card {
-        width: 95%;
+    .portfolio .card{
+        width: 80vw;
+        height: 100vw;
     }
     
     .portfolio .card img{
-        height: 75vw;
+        height: 80vw;
+        width: 80vw;
     }
 
-
-    .contactContainer{
-        display: flex;
-        margin-left: 40%;
-        justify-content: space-between;
-        width: 20%;
-        height: 20vw;
-        margin-top: 10%;
-        border-radius: 50%;
-        box-shadow: 0px -15px 1vw #443e30;
+    #ring {
+        height: 80vw;
+        width: 80vw;
     }
-    
-    .contact a:hover {
-        font-size: 6rem;
-    }
-    
 }
 
-.static:hover {
-    font-size: default;
-    color: default;
-}
-
-
-.static:active {
-    font-size: default;
-    color: default;
+#splash.hiContrast, 
+#splash.light.hiContrast,  
+#portfolio h2.light.hiContrast,  
+#portfolio h2.hiContrast,
+#ring.hiContrast,
+#ring.light.hiContrast{
+  background-image: none;
+  box-shadow: none;    
 }

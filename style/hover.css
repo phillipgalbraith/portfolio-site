@@ -1,0 +1,85 @@
+header a.hovers:hover{
+    font-size: 3.3rem;
+}
+
+.card.light img.hovers:hover{
+    box-shadow: 0 10px 3px rgb(132, 158, 177);
+}
+
+#aboutContainer div.hovers:hover *{
+    padding-left: 0;
+    width: 100%;
+    color: white;
+}
+
+#aboutContainer div.hovers:hover *.light{
+    color: black;
+}
+
+#aboutContainer div p.hovers:hover{
+    color:#FFED5F;
+}
+
+#aboutContainer div p.light.hovers:hover{
+    color:rgb(90, 0, 0);
+}
+
+#contactContainer h3.hovers:hover{
+    font-size: 3rem;
+    color: #FFED5F;
+}
+
+#contactContainer h3.light.hovers:hover{
+    color:rgb(255, 145, 0);
+}
+
+.contact.hovers:hover a{
+    font-size: 3.4rem;
+}
+
+.card.light.contact.hovers:hover img{
+    box-shadow: 0 10px 3px rgb(132, 158, 177);
+}
+
+.card.hovers:hover img {
+    opacity: 100%;
+}
+
+.card.hovers:hover h3 {
+    color:white;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+    opacity: 100%;
+}
+
+.card.light.hovers:hover  h3{
+    color:rgb(0, 0, 0);
+}
+
+@media (max-width: 700px){
+    #aboutContainer div.hovers:hover p{
+        padding-left: 2vw;
+        width: 100%;
+        color:#FFED5F;
+    }
+
+    #aboutContainer div.hovers:hover p{
+        padding-left: 2vw;
+        width: 100%;
+        color:#FFED5F;
+    }
+
+    #aboutContainer div.hovers:hover p.light{
+        color:rgb(255, 145, 0);
+    }
+}
+
+@media (max-width: 500px){
+    header a.hovers:hover{
+        font-size: 1.8rem;
+    }
+       
+    .contact a.hovers:hover{
+        font-size: 1.8rem;
+    }
+}  
