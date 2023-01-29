@@ -208,7 +208,7 @@ a:active{
 }
 
 .card.light h3{
-    color: rgb(255, 145, 0);
+    color: rgb(0, 0, 0);
 }
 
 #contactModal{
@@ -281,7 +281,16 @@ footer h3{
 
 .half span{
     font-size: 2rem;
+    color: #FFED5F;
 }
+
+.half a{
+    text-decoration: none;
+    color: #FFED5F;
+    font-size: 2.5rem;
+    transition: 0.5s;
+}
+
 
 #ring.light{
     box-shadow: none;
@@ -425,6 +434,7 @@ footer h3{
     .profile .card span{
         font-size: 1rem;
     }
+    
     .portfolio .card img{
         width: 27vw;
         height: 27vw;
